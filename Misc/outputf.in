@@ -1,4 +1,9 @@
-before sorting: 
-4 2 7 1 3 6 5 
-after sorting: 
-1 2 3 4 5 6 7 
+inDegree[0]: 0
+inDegree[1]: 1
+inDegree[2]: 1
+inDegree[3]: 3
+inDegree[4]: 1
+inDegree[5]: 1
+ordering size: 3
+numVertex: 7
+Cycle detected!

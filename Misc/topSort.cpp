@@ -28,46 +28,23 @@ vector<int> topSort(int numVertex, vector<vector<int>>& edges) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-int dfs2(int index, int currVertex, vector<bool>& visited, vector<vector<int>>& edges, vector<int>& ordering) {
-	visited[currVertex] = true;
-	for(auto child : edges[currVertex]) {
-
-	}
-}
-
-vector<int> topSort2(int numVertex, vector<vector<int>>& edges) {
-	vector<int> ordering; // topological ordering 
-	vector<bool> visited(numVertex, false);
-	int index = numVertex - 1;
-
-	for(int i = 0; i < numVertex; i++) {
-		if(visited[i]) continue;
-		index = dfs(index, i, visited, edges, ordering);
-	}
-
-	return ordering;
-}
-
 int main() {
+	int numVertex = 7;
+	vector<vector<int>> edges = {
+		{1, 2},
+		{3},
+		{3},
+		{4},
+		{6},
+		{5},
+		{}
+	};
+
+	vector<int> topSortOrder = topSort(numVertex, edges);
+	cout << "what " << endl;
+
+	for(int e : topSortOrder) cout << e << " ";
+	cout << endl; 	
+
 
 }
