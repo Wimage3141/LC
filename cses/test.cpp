@@ -12,11 +12,13 @@ bool cmp(pair<long long, long long> a,
 }
 
 void solve() {
-    
-    vector<pair<long long, long long>> v = {{2, 3}, {2, 4}, {5, 9}, {3, 7}, {6, 8}, {9, 10}, {1, 5}};
-    sort(v.begin(), v.end(), cmp);
-    
-    for(auto a : v) cout << a.second << endl;
+    vector<int> v = {24, 7, -27, 17, -67, 65, -23, 58, 85, -39};
+    int sum = 0;
+    for(size_t i = 0; i < 5; i++) {
+        sum += v[i];
+    }
+    cout << sum << endl;
+    cout << (65 - 23 + 58 + 85) << endl;
 }
 
 int main() {
